@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="FlightsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1489.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sigma.FlightsController">
+   <children>
+      <Label layoutX="105.0" layoutY="112.0" prefHeight="63.0" prefWidth="493.0" text="Customer Tickets">
+         <font>
+            <Font name="Trebuchet MS Bold" size="54.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="223.0" prefHeight="491.0" prefWidth="1457.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="83.0" text="id" />
+          <TableColumn fx:id="FirstName" prefWidth="88.0" text="FirstName" />
+            <TableColumn fx:id="LastName" prefWidth="88.33331298828125" text="LastName" />
+            <TableColumn fx:id="Nic" prefWidth="97.66668701171875" text="NIC no" />
+            <TableColumn fx:id="Passport" prefWidth="74.66665649414062" text="Passport" />
+            <TableColumn fx:id="Address" minWidth="0.0" prefWidth="84.0" text="Address" />
+            <TableColumn fx:id="Dob" prefWidth="100.0" text="Date of birth" />
+            <TableColumn fx:id="Gender" prefWidth="71.0" text="Gender" />
+            <TableColumn fx:id="From" prefWidth="123.66668701171875" text="Flight from" />
+            <TableColumn fx:id="To" prefWidth="93.33331298828125" text="Flight to" />
+            <TableColumn fx:id="DepartureDate" prefWidth="129.3333740234375" text="Departure date" />
+            <TableColumn fx:id="ArriveDate" prefWidth="128.0" text="Arrive date" />
+            <TableColumn fx:id="Time" prefWidth="116.0" text="Departure time" />
+            <TableColumn fx:id="PhoneNumber" prefWidth="182.666748046875" text="Phone number" />
+        </columns>
+      </TableView>
+      <Button layoutX="643.0" layoutY="117.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="53.0" prefWidth="146.0" text="BACK">
+         <font>
+            <Font name="Trebuchet MS" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
